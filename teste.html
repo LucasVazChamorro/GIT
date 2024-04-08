@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!-- sempre que iniciar uma linguagem em html, deve-se contemplar este comando-->
+<html> <!-- todo o site deverá estar dentro desta tag -->
+    <head> <!--  informações técnicas/cabeçalho do site-->
+        <meta charset="UTF-8" /> <!-- serve para reconhecer os acentos característicos da língua portuguesa-->
+        <title>Primeira página em html sendo editada por mim!</title> <!-- aqui é o título (nome da página que aparece na guia do navegador), que faz parte do head-->   
+        <style>
+            h1 {
+                color: red;
+            }
+
+            a {
+                color: blue
+            }
+
+            img {
+                width: 250px;
+            }
+
+            li {
+                font-weight: bold;
+                color: chocolate;                
+            }
+            #titulo {
+                background-color:rgb(red, green, blue);
+                color: rgb(255, 255, 255);
+
+            }
+            p {
+                border: 1px dotted black  
+            } 
+            div {
+                background-color:#0099ff;
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                border:1px solid darkblue;
+            }
+          
+        </style>
+
+    </head> 
+
+    <body> <!-- Na tag body será posto o texto visível do site.-->   
+
+        <h1 style="color:red">ESTE É O HEADING - CABEÇALHO, utilizado para dar o título da página</h1> 
+        <h2>Vai de h1 a h6, e quanto maior o número, menor o tamanho da fonte</h2>
+        <h4>Percebe?</h4>
+        <h6>Este é o menor tamanho</h6>
+        <h1 style="font-size: 15px; color:blue"> contudo, nada impede que mesmo usando h1, utilize um CSS in line e defina outro tamanho de fonte!!!</h1>
+        <h1 id="titulo">cobaia para aplicação de cores</h1>
+        <!-- o motor de busca do google dará maior importância para o h1, pois é algo mais relevante, e o resultado da busca será melhor ranqueado-->
+
+        <hr/>
+        hr é uma linha horizontal, é uma teg única, abre e fecha nela mesma.
+
+        <p>Esta tag é utilizada para dar início a um parágrafo </br>
+            Nesta tag, ainda foram aplicadas no css estilos de bordas 
+        </p>
+
+        <div></div>
+
+        <strong>Black Metal </strong></br></strong>
+        <u>Underline é sublinhado, e strong é forte/negrito</u>
+
+        <strong>Posso <u>misturar</u> estilos</strong>
+
+        <h2>Obs: Tag são trechos de código que servem para organizar a estrutura de seu código e site/sistema.</h2>
+
+        <a href="https://bitcoin.org/files/bitcoin-paper/bitcoin_pt_br.pdf">esta tag é uma ancor, por exemplo, "Clique aqui para explodir sua cabeça"</a>     
+        <br/>
+
+        <a href="login.html" target="_blank" tittle="Fazer login">Página de login</a>
+        <br/>
+        <img src="https://media.seudinheiro.com/cdn-cgi/image/fit=contain,width=715&,format=auto/uploads/2021/10/bitcoin-criptomoedas-btc-hoje-628x353.jpg" alt="bitcoin" width="250px"/>
+        <br/><br/>
+
+        <a href="https://www.google.com.br">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Google_Logo_%281998%29.png">
+            <br/>
+
+        </a>
+
+       
+
+
+        <button>Crique aqui carai</button> <!-- somente foi criado o botão, a ação será vista no futuro-->
+
+        <h3>Altcois mais seguras sem ordem de preferência</h3>
+        <ul> <!--lista desordenada-->
+            <li>ETH</li>
+            <a href="https://ethereum.org/pt-br/what-is-ethereum/" target="_blank"> 
+                <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=029"> 
+                 <br/>
+            </a>
+            <li>LINK</li>
+            <a href="https://blog.chain.link/what-is-chainlink/" target="_blank">
+                <img src="https://cryptologos.cc/logos/chainlink-link-logo.png?v=029">
+                <br/>
+            </a>
+            <li>SOL</li>
+            <a href="https://solana.com/pt/docs" target="_blank">
+                <img src="https://cryptologos.cc/logos/solana-sol-logo.png?v=029">
+                <br/>
+            </a>
+        </ul>
+        <h3>Seguindo uma ordem de preferência pessoal</h3>
+        <ol> <!--lista ordenada-->
+            <li>ETH</li>
+            <li>LINK</li>
+            <li>SOL</li>
+        </ol>
+    </body>
+
+</html>
