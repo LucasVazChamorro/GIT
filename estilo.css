@@ -26,3 +26,26 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+table {
+    width: 600px;
+}
+table thead {
+    background-color: #CCC;
+}
+table tbody {
+    background-color: #b3a884;
+}
+th, td {
+    padding:10px;
+    text-align: left;
+}
+tbody tr:hover {
+    background-color: #63da77;
+}
+tbody td {
+    border-bottom: 1px solid #cccccc;
+}
+tbody tr:nth-child(even) {
+    background-color: #EEE;
+}
