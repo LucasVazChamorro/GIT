@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <h2>Área de cadastro</h2>
+    <form action="paginas/login.html" method="post">
+        <label>Usuário:</label><br/>
+        <input type="text" name="usuario"/> <br/>
+        <label>Senha:</label><br/>
+        <input type="password" /><br/></br></br>
+
+        <label for="teste">Aceite os termos de uso:</label><br/>
+        <input type="checkbox" id="teste"/> <br/> <! caixa de seleção ><br/>
+        <label>Sexo:</label><br/>
+        <label>Masculino:</label><input type="radio" name="sexo" /> 
+        <label>Feminino:</label><input type="radio" name="sexo" /> </br>
+        <input type="submit"/>
+    </br></br></br>
+        <label>
+            <input type="checkbox" />
+            Eu declaro e entendo que o BTC é o melhor ativo, corra da república democrática do xandão!
+        </label>
+
+    </br></br></br>
+    </form>
+
+    <h3>Outra área de Cadastro</h3>
+    <form  action="login.html" method="post">
+        <input type="color" name="usuario" />
+        <input type="date" name="usuario" />
+        <input type="datetime-local" name="usuario" />
+
+        <select name="ordenacao">
+            <option value="bestseller">Mais vendidos</option>
+            <option value="last" selected>Recentes</option>
+            <option>Menores precos</option>
+        </select>
+
+        <textarea name="descricao" style="width: 200px;height: 100px;"></textarea>
+
+        <button>teste botão</button>
+
+    </form>
+
+</br></br></br></br></br></br>
+<h3>Aula 14 - formatando formulários no css </h3>
+    <form>
+        <label>
+            Nome completo:<br/>
+            <input typle="text" name="nome" />
+        </label>
+
+        <label>
+            Descrição:<br/>
+            <textarea name="descricao"></textarea>
+        </label>
+
+        <label>
+            Categoria:<br/>
+            <select name="categoria">
+                <option value="1">Categoria 1</option>
+                <option value="2">Categoria 2</option>
+                <option value="3">Categoria 3</option>
+                <option value="4">Categoria 4</option>
+                <option value="5">Categoria 5</option>
+            </select>
+        </label>
+        <label>
+            <input type="checkbox" />
+            Eu declaro que li e aceito os <a href="paginas/termos.html" target="_blank" class="termoslink">termos de usuario</a>. 
+        </label>
+
+        <button>Fazer Cadastro</button>
+
+
+
+    </form>
+</body>
+</html>

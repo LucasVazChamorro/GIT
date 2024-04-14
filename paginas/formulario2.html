@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilaodamassa.css" />
+</head>
+<body>
+    <form method="post" action="blabla.php" enctype="multipart/form-data">
+        <input type="hidden" name="country" value="BR" />
+
+        <fieldset>
+        <legend>Dados pessoais</legend>
+        <label>
+            Primeiro nome:<br/>
+            <input type="text" name="name" required minlength="2"/>
+        </label><br/>
+
+        <label>
+            Sobrenome:<br/>
+            <input type="text" name="lastname"/>
+        </label><br/>
+
+        <label>
+            Foto:<br/>
+            <input type="file" name="photo" accept="image/*"/>
+        </label><br/>
+
+        <label>
+            Idade:<br/>
+            <input type="number" name="age" step="1" min="18" max="100"/>
+        </label><br/>
+
+        <label>
+            E-mail:<br/>
+            <input type="" name="email" pattern="(^[a-zA-z0-9_.+-]+\.[a-zA-z0-9-.]+$)" title="endereço de e-mail" required/>
+        </label><br/>
+
+        </fieldset>
+        
+        <fieldset>
+        <legend>Dados profissionais</legend>
+        <label>
+            Nome da empresa:<br/>
+            <input type="text" name="companyname" />
+        </label><br/>
+
+        <label>
+            Cargo:<br/>
+            <input type="text" name="companyjobtittle" />
+        </label><br/>
+        
+        </fieldset>
+
+        <input type="submit" value="Cadastrar" />
+    </form>
+</body>
+</html>
