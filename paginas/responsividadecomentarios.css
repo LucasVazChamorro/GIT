@@ -1,0 +1,60 @@
+body {
+    background-color: #00FF00;
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: #0000FF;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 999px) {
+    body {
+        background-color: purple;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@MEDIA (max-width: 600px) {
+    body {
+        background-color: #FF0000;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media only print {
+    h1 {
+        font-size: 20px;
+        font-weight: normal;
+    }
+}
+
+body {
+    display: flex;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+} 
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,19 @@
+:root {
+    --bg-color: #000;
+    --bg-second: #444;
+    --font-color: #FFF;
+    --font-size: 20px;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-size: var(--font-size);
+}
+
+h1 {
+    color: var(--font-color);
+}
+.container {
+    background-color: var(--bg-second);
+    color: var(--font-color);
+}
