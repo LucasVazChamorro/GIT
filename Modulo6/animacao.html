@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes exemplo {
+            0% {background-color: red; top:0; left: 0;}
+            25% {background-color: yellow;top:0; left: 200;}
+            50% {background-color: blue;top:200; left: 200;;}
+            75% {background-color: green;top:200; left: 0;}
+            100% {background-color: red;top:0; left: 0;}
+        }
+
+        body {
+            margin: 0;
+        }
+        .exemplo {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: absolute;
+            animation-name: exemplo;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        .sombra{
+            width: 350px;
+            height: 250px;
+            background-color: rgb(55, 0, 255);
+            margin:auto;
+            margin-top: 100px; 
+            box-shadow: 10px 10px 5px; #8888;
+            transition: all 2s linear;
+        }
+        .sombra:hover {
+            width: 700px;
+            height: 500px;
+        }
+        a {
+            color: black;
+            transition: all 2s linear;
+        }
+        a:hover{
+            color: blue;
+        }
+        .paragrafo {
+            width:150px;
+            height: 350px;
+            border: 2px solid #000;
+            word-wrap: break-word;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="exemplo"></div>
+    <div class="sombra"></div>
+    <a href="https://bitcoin.org">Estude e se emancipe do Estado!</a>
+
+    <div class="paragrafo">
+        This paragraph contains a very long word: tfhnsdufhsduifhsduhfsuuahduhasudhsauhduashdusahdusahdusahduashdusahdusahdaushdsauhdusahdusahdaushduashdusahdusahduashdusahdusahudhsaudhsauhdsauhdsauhdaushdusahduashdsauhdsauhdusahdsaudhsauhdusahdusahdsuahdaushduhgufdhgudhguhfsudhasudhaudhausidhsaudu. The long owrd will break and wrap to the next line.
+    </div>
+</body>
+</html>

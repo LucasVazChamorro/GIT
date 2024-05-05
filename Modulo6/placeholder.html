@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder</title>
+    <style>
+        body {
+            margin:0;
+        }
+        #teste {
+            background-color: green;
+            margin-left: 100px;
+            margin-top: 100px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50px;
+        }
+        .exemplo {
+            width: 500px;
+            height: 200px;
+            background: blue;
+            background: linear-gradient(#34036191, blue, black);
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        Usurário:<br/>
+        <input type="email" name="email" placeholder="email" autofocus  required/><br/><br/>
+        <!-- autofocus serve para deixar o cursor na caixa de diálogo
+        size serve reduz o tamanho do campo para o número máximo de caracteres quiser
+        maxlength determina o numero máximo de caracteres
+        required significa que o campo é obrigatório-->
+        Senha:<br/>
+        <input type="password" name="senha" maxlength="8" required/> <br/><br/>
+
+        <input type="submit" value="Enviar" />
+
+        <div id="teste">
+
+        </div>
+        <br/><br/><br/>
+
+        <div class="exemplo"></div>
+    </form>
+</body>
+</html>
